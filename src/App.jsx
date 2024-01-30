@@ -9,10 +9,10 @@ import Update from "./components/Update";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="/CRUD-App">
+      <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route exact path="/CRUD-App" element={<Create />} />
+          <Route exact path="/" element={<Create />} />
           <Route exact path="/read" element={<Read />} />
           <Route exact path="/edit/:id" element={<Update />} />
         </Routes>
