@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import Create from "./components/Create";
 import Navbar from "./components/Navbar";
@@ -8,7 +9,7 @@ import Update from "./components/Update";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="/CRUD-App">
+      <BrowserRouter>
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Create />} />
