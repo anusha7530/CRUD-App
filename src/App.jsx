@@ -8,7 +8,7 @@ import Update from "./components/Update";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/CRUD-App">
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Create />} />
